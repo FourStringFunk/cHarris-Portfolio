@@ -10,7 +10,8 @@
         <title>Christopher Harris</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./assets/style.css">
+        <link rel="stylesheet" href="./assets/Styles/style.css">
+        <link rel="stylesheet" href="./assets/Styles/reset.css">
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -18,7 +19,8 @@
         <![endif]-->
         <header>
             <div id="header-line"></div>
-            <img src="" alt="Christopher Harris Headshot" />
+            <img src="https://png.pngtree.com/png-clipart/20210129/ourmid/pngtree-default-male-avatar-png-image_2811083.jpg" alt="Christopher Harris Headshot" />
+            <h1>Christopher Harris</h1>
             <nav>
                 <a href="#about">About</a>
                 <a href="#projects">Projects</a>
@@ -27,35 +29,42 @@
         </header>
 
         <main>
-            <section id="hero">
-                <summary>
-                    <div id="introduction">
+            <section>
+                <div class="container">
+                    <div class="intro">
                         <h2>Welcome!</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                         <button type="button">Projects</button>
                     </div>
-                </summary>
+                </div>
             </section>
 
-            <section id="about">
+            <section>
                 <article>
-                    <div class="intro" id="article-intro">
-                        <h2>About Me</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <div id="line-break"></div>
-                    </div>
+                    <div class="container">
+                        <div>
+                            <h2>About Me</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <div id="line-break"></div>
+                        </div>
 
-                    <div id="Headshot">
-                        <img src="" alt="Christopher Harris Headshot" />
-                    </div>
-                    <div id="about-description">
-                        <h2>Hello There! I'm Chris Harris</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <button type="button">Download Resume</button>
-                    </div>
-                    <div id="languages-container">
-                        <h3>Languages</h3>
+                        <div class="description">
+                            <div>
+                                <img src="" alt="Christopher Harris Headshot" />
+                            </div>
+                                
+                            <div>
+                                <h2>Hello There! I'm Chris Harris</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <button type="button">Download Resume</button>
+                            </div>   
+                        </div>
+
+                        <div>
+                            <h3>Languages</h3>
+                        </div>
+
                         <div class="languages-list">
                             <div class="language-item"><p>HTML</p></div>
                             <div class="language-item"><p>CSS</p></div>
@@ -75,50 +84,52 @@
                 </article>
             </section>
 
-            <section id="projects">
+            <section>
                 <article>
-                    <div class="intro" id="projects-intro">
-                        <h2>Projects</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
+                    <div class="container">
+                        <div>
+                            <h2>Projects</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
 
-                    <div class="project-container">
-                        <div class="project-image">
-                            <img src="" alt="Cohesion Brewing Company Logo" />
+                        <div>
+                            <div class="project-image">
+                                <img src="" alt="Cohesion Brewing Company Logo" />
+                            </div>
+                            <div class="project-description">
+                                <h3>Cohesion Brewing Company</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                <button type="button">Case Study</button>
+                            </div>
                         </div>
-                        <div class="project-description">
-                            <h3>Cohesion Brewing Company</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            <button type="button">Case Study</button>
-                        </div>
-                    </div>
 
-                    <div class="project-container">
-                        <div class="project-image">
-                            <img src="" alt="Center for Mycological Analysis Logo" />
+                        <div>
+                            <div class="project-image">
+                                <img src="" alt="Center for Mycological Analysis Logo" />
+                            </div>
+                            <div class="project-description">
+                                <h3>Center for Mycological Analysis</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                <button type="button">Case Study</button>
+                            </div>
                         </div>
-                        <div class="project-description">
-                            <h3>Center for Mycological Analysis</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            <button type="button">Case Study</button>
-                        </div>
-                    </div>
-                    <div class="project-container">
-                        <div class="project-image">
-                            <img src="" alt="Sunlit Hills Photography Logo" />
-                        </div>
-                        <div class="project-description">
-                            <h3>Sunlit Hills Photography</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            <button type="button">Case Study</button>
+                        <div>
+                            <div class="project-image">
+                                <img src="" alt="Sunlit Hills Photography Logo" />
+                            </div>
+                            <div class="project-description">
+                                <h3>Sunlit Hills Photography</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                <button type="button">Case Study</button>
+                            </div>
                         </div>
                     </div>
                 </article>     
             </section>
 
-            <section id="contact">
-                <div id="contact-container">
-                    <div class="intro" id="form-intro">
+            <section>
+                <div class="container">
+                    <div>
                         <h2>Contact</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>

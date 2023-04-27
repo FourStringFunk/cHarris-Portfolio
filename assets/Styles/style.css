@@ -23,12 +23,12 @@ header {
     align-items: center;
 }
 
-header > *:not(:last-child) {
+header > *:not(:last-child), .footerDescription > *:not(:last-child) {
     margin-right: 0;
     margin-left: 0;
 }
 
-header > :nth-last-child(2) {
+header > :nth-last-child(2), .footerDescription > :nth-last-child(2) {
     margin-right: auto;
     margin-left: 0;
 }
@@ -44,6 +44,10 @@ section:first-child {
     height: 92vh;
 }
 
+#projects {
+    min-height: 125vh !important;
+}
+
 section:nth-child(odd) {
     background-color: var(--odd-bg-color);
 }
@@ -52,6 +56,11 @@ footer {
     height: 20vh;
     background-color: var(--footer-bg-color);
     color: #fff;
+    padding: 4vh 5vw 3vh 4vw;
+}
+
+footer p {
+    color: var(--alt-p-color);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -177,6 +186,16 @@ nav a:nth-child(2) {
     padding: 0;
 }
 
+/* SECTION LINE STYLES */
+
+.sectionLine {
+    margin: 3vh 0 3vh 0;
+    width: 65%;
+    height: 0.25vh;
+    background: rgb(250,199,16);
+    background: linear-gradient(90deg, rgba(250,199,16,0.22032563025210083) 0%, rgba(250,199,16,1) 50%, rgba(250,199,16,0.22872899159663862) 100%);
+}
+
 /* FORM STYLES */
 
 #formContainer {
@@ -191,10 +210,6 @@ nav a:nth-child(2) {
     flex-direction: column;
 }
 
-#contactform:last-child {
-    align-items: right;
-}
-
 label {
     margin-bottom: 5px;
     padding: 0;
@@ -203,10 +218,6 @@ label {
 input {
     margin-bottom: 25px;
     border-radius: 5px;
-}
-
-textarea {
-    border: 1px solid #1A1A1A;
 }
 
 input::placeholder {
@@ -229,4 +240,41 @@ input:focus::placeholder {
 
 input[type=button] {
     margin-top: 25px;
+}
+
+/* FOOTER STYLES */
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footerDescription {
+    display: flex;
+    align-items: center;
+}
+
+footer img {
+    height: 50px;
+    width: 50px;
+    margin-right: 1vw;
+    border-radius: 50%;
+    background-color: var(--footer-bg-color);
+}
+
+#footerDescription {
+    width: 35%;
+    margin-left: 2vw;
+    align-items: center;
+}
+
+#footerDescription h4, #social h4 {
+    padding-bottom: 5px;
+}
+
+.centerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

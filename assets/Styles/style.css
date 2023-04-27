@@ -44,8 +44,8 @@ section:first-child {
     height: 92vh;
 }
 
-#projects {
-    min-height: 125vh !important;
+#projects, #applications { /* REMOVE APPLICATIONS TAG WHEN REVERTING TO ACTUAL PORTFOLIO */
+    min-height: 110vh !important;
 }
 
 section:nth-child(odd) {
@@ -72,9 +72,10 @@ h3 {
     margin-top: 30px;
 }
 
-p, a, button, label, input, textarea {
+p, a, ul, button, label, input, textarea {
     font-family: "Source Sans Pro", sans-serif;
     padding-bottom: 20px;
+    line-height: 1.5;
 }
 
 p {
@@ -155,16 +156,16 @@ nav a:nth-child(2) {
     margin: 20px 0 20px 0;
 }
 
-#aboutImage, .projectImage {
+#aboutImage /*, .projectImage */ { /* DO NOT DELETE, IMPACTS PROJECT SECTION */
     width: 25%;
     align-items: right;
 }
 
-#aboutImage img, .projectImage img {
+#aboutImage img /* , .projectImage img */ { /* DO NOT DELETE, IMPACTS PROJECT SECTION */
     border-radius: 50%;
 }
 
-#aboutDescription, .projectDescription {
+#aboutDescription /* , .projectDescription */ { /* DO NOT DELETE, IMPACTS PROJECT SECTION */
     width: 70%;
 }
 
@@ -186,6 +187,91 @@ nav a:nth-child(2) {
     padding: 0;
 }
 
+/* APPLICATION STYLES */
+.applicationContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2vh 1vw;
+}
+
+.applicationContainer div:first-child {
+    flex: 2 1 100%;
+}
+
+.applicationContainer div:not(:first-child) {
+    flex: 3 1 33%;
+}
+
+.application {
+    border: 2px solid var(--footer-bg-color);
+    height: 25vh;
+}
+
+#image1:hover, #image2:hover, #image3:hover, #image4:hover, #image5:hover {
+    background-color: var(--main-bg-color);
+    opacity: 0.75;
+}
+
+#image1 {
+    background-image: url(/assets/images/Photos/astro.jpeg);
+    background-size: cover;
+    background-position: bottom;
+}
+
+#image2 {
+    background-image: url(/assets/images/Photos/forest.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+#image3 {
+    background-image: url(/assets/images/Photos/kayak.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+#image4 {
+    background-image: url(/assets/images/Photos/sanddunes.jpeg);
+    background-size: cover;
+    background-position: top;
+}
+
+#image5 {
+    background-image: url(/assets/images/Photos/forest.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.applicationText {
+    background-color: var(--footer-bg-color);
+    padding: 5px;
+    transform: translateY(150px);
+    width: 35%;
+}
+
+.applicationText a {
+    text-decoration: none;
+    color: var(--alt-p-color);
+}
+
+.applicationText a:hover {
+    color: var(--line-color);
+}
+
+.textVariation {
+    width: 50%;
+}
+
+.application h3, .application p {
+    margin: 0;
+    padding: 5px 5px;
+    padding-left: 10px;
+    color: var(--alt-p-color);
+}
+
+
 /* SECTION LINE STYLES */
 
 .sectionLine {
@@ -194,7 +280,7 @@ nav a:nth-child(2) {
     height: 0.25vh;
     background: rgb(250,199,16);
     background: linear-gradient(90deg, rgba(250,199,16,0.22032563025210083) 0%, rgba(250,199,16,1) 50%, rgba(250,199,16,0.22872899159663862) 100%);
-}
+} 
 
 /* FORM STYLES */
 
@@ -272,6 +358,15 @@ footer img {
 #footerDescription h4, #social h4 {
     padding-bottom: 5px;
 }
+
+.footerDescription {
+    text-decoration: none;
+}
+
+#footerDescription p {
+    padding: 0;
+}
+
 
 .centerContainer {
     display: flex;

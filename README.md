@@ -50,6 +50,14 @@ I used Ram Maheshwari's portfolio as a reference for both design and functionali
 All credit goes to [Ram Maheshwari](https://www.rammaheshwari.com/) 
 
 ### WIREFRAME
+- Modified [wireframe](https://raw.githubusercontent.com/FourStringFunk/cHarris-Portfolio/main/assets/images/Photos/Wireframe-cHarrisPortfolio-Homepage.jpeg) with my own design changes. 
+
+![Homepage Wireframe](https://raw.githubusercontent.com/FourStringFunk/cHarris-Portfolio/main/assets/images/Photos/Wireframe-cHarrisPortfolio-Homepage.jpeg)
+
+### APPLICATIONS SECTION
+- A [screenshot](https://raw.githubusercontent.com/FourStringFunk/cHarris-Portfolio/main/assets/images/Photos/cHarris-Portfolio-Applications.png) of the applications section displaying some of the functionality outlined in the *Accesibility Requestions* section of this document.
+
+![Applications Section](https://raw.githubusercontent.com/FourStringFunk/cHarris-Portfolio/main/assets/images/Photos/cHarris-Portfolio-Applications.png)
 
 ## LICENSE
 N/A

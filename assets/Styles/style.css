@@ -36,11 +36,19 @@ header {
 header > *:not(:last-child), .footerDescription > *:not(:last-child) {
     margin-right: 0;
     margin-left: 0;
-}
+} 
 
 header > :nth-last-child(2), .footerDescription > :nth-last-child(2) {
     margin-right: auto;
     margin-left: 0;
+}
+
+#hamburgerMenu {
+    display: none;
+}
+
+.overlay {
+    display: none;
 }
 
 main {
@@ -402,7 +410,7 @@ footer img {
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
     /* UNIVERSAL STYLES */
     section {
         min-height: 100vh;
@@ -453,8 +461,9 @@ footer img {
     }
 }
 
-@media screen and (max-width: 845px) {
+@media only screen and (max-width: 845px) {
     /* HEADER STYLING*/
+
     h1 {
         font-size: 14px;
     }
@@ -543,8 +552,11 @@ footer img {
     }
 }
 
-@media screen and (max-width: 653px) {
+@media only screen and (max-width: 668px) {
     /* insert hamburger menu code here */
+    #contact {
+        height: 145vh;
+    }
 
     #applications {
         height: 125vh;
@@ -563,4 +575,27 @@ footer img {
     .applicationText {
         transform: translateY(121px);
     }
-}
+    
+    @media only screen and (max-width: 480px) {
+        /* insert hamburger menu code here */
+        #contact {
+            height: 145vh;
+        }
+    
+        #applications {
+            height: 125vh;
+        }
+    
+        footer {
+            min-height: 50vh;
+        }
+    
+        /* APPLICATIONS STYLING */
+        .applicationContainer {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    
+        .applicationText {
+            transform: translateY(121px);
+        }

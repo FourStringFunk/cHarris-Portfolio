@@ -108,6 +108,15 @@ a:hover {
     color: var(--line-color);
 }
 
+button a {
+    text-decoration: none;
+    color: var(--alt-p-color);
+}
+
+button a:hover {
+    color: var(--p-color);
+}
+
 button, input[type=button] {
     padding: 15px 50px;
     border-radius: 10px;
@@ -117,6 +126,7 @@ button, input[type=button] {
 
 button:hover, input[type=button]:hover {
     background-color: var(--line-color);
+    color: var(--p-color);
 }
 
 button:hover {
@@ -575,6 +585,7 @@ footer img {
     .applicationText {
         transform: translateY(121px);
     }
+}
     
     @media only screen and (max-width: 480px) {
         /* insert hamburger menu code here */
@@ -599,3 +610,4 @@ footer img {
         .applicationText {
             transform: translateY(121px);
         }
+    }

@@ -39,6 +39,10 @@ header > :nth-last-child(2), .footerDescription > :nth-last-child(2) {
     margin-left: 0;
 }
 
+main {
+    transform: translateY(8vh);
+}
+
 section {
     min-height: 100vh;
     display: flex;

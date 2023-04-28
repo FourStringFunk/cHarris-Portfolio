@@ -250,9 +250,9 @@ nav a:nth-child(2) {
 }
 
 #image5 {
-    background-image: url();
+    background-image: url(https://raw.githubusercontent.com/FourStringFunk/cHarris-Portfolio/main/assets/images/Photos/Sirius.jpeg);
     background-size: cover;
-    background-position: center;
+    background-position: center -75px;
 }
 
 .applicationText {
@@ -383,4 +383,169 @@ footer img {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0;
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 1024px) {
+    /* UNIVERSAL STYLES */
+    section {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        width: 80vw;
+    }
+
+    .intro {
+        margin: 2vh 1vh;
+    }
+
+    /* ABOUT ME STYLES*/
+
+    .description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0 !important;
+        padding: 0;
+    }
+
+    #aboutImage {
+        margin-bottom: 2vh;
+    }
+
+    #aboutDescription {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #aboutDescription h2, #aboutDescription p, #aboutDescription button {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .languagesList {
+        margin-bottom: 2vh;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 845px) {
+    /* HEADER STYLING*/
+    h1 {
+        font-size: 14px;
+    }
+
+    h3 {
+        padding: 0;
+        text-align: center;
+    }
+
+    nav a {
+        font-size: 10px;
+    }
+
+    .container {
+        padding: 2vh 2vh;
+        width: 100vw;
+    }
+
+    /* ABOUT ME STYLING */
+    .languageHeader {
+        font-size: 12px;
+    }
+
+    .languagesList {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .languageItem {
+        flex: 1;
+    }
+
+    /* APPLICATIONS STYLING */
+    .applicationContainer {
+        display: flex;
+        width: 80vw;
+    }
+
+    .applicationText {
+        background-color: var(--footer-bg-color);
+        width: 100%;
+        padding: 0 0 5px 0;
+    }
+
+    .applicationText H3 {
+        font-size: 14px;
+    }
+
+    .applicationText p {
+        font-size: 10px;
+        text-align: center;
+        padding: 0;
+    }
+
+    /* FORM STYLING */
+    .formContainer {
+        width: 100%;
+    }
+
+    /* FOOTER STYLING */
+    footer {
+        min-height: 45vh;
+    }
+    .footerContainer, .footerDescription, #social, .centerContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #footerDescription {
+        margin-top: 10px;
+    }
+
+    #footerImage, #footerDescription {
+        text-align: center;
+        width: 100%;
+    }
+
+    #social {
+        margin-top: 25px;
+    }
+
+    #social h4 {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 653px) {
+    /* insert hamburger menu code here */
+
+    #applications {
+        height: 125vh;
+    }
+
+    footer {
+        min-height: 50vh;
+    }
+
+    /* APPLICATIONS STYLING */
+    .applicationContainer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .applicationText {
+        transform: translateY(121px);
+    }
 }
